@@ -64,6 +64,8 @@ jobs:
       - name: Build 
         working-directory: .
         run: |
+          ceramic libs
+          haxelib git --always haxeui-ceramic https://github.com/jarrio/haxeui-ceramic surfacereworkv2
           ceramic clay build web --setup --assets
           rm project/web/.gitignore
       - name: Add .nojekyll
