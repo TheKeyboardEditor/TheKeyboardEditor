@@ -89,3 +89,7 @@
 #keys {
 	spacing: 4px;
 }
+#keys .button {
+	border: 1px solid $normal-border-color;
+	border-radius: 4px;
+}
