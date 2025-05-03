@@ -7,7 +7,7 @@ import haxe.ui.events.UIEvent;
 <vbox style="spacing: 0">
 	<menu-item-picker id="picker" showText="false" showIcon="false" width="64px" height="32px" panelWidth="200" animatable="false" verticalAlign="center">
 		<item-renderer id="itemPickerRenderer" height="32px" verticalAlign="center">
-			<image resource="icons/kebab-dropdown" horizontalAlign="center" />
+			<image resource="icons/logo-dropdown" horizontalAlign="center" verticalAlign="center" />
 		</item-renderer>
 		<data>
 			<item id="new" text="New" />

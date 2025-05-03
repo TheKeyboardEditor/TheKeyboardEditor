@@ -23,7 +23,7 @@ class MainScene extends Scene {
 		assets.add(Images.ICONS__KEYBOARD_MODE);
 		assets.add(Images.ICONS__COLOR_MODE);
 		// MISC ICONS
-		assets.add(Images.ICONS__KEBAB_DROPDOWN);
+		assets.add(Images.ICONS__LOGO_DROPDOWN);
 		assets.add(Images.ICONS__UNDO);
 		assets.add(Images.ICONS__REDO);
 		assets.add(Images.ICONS__COPY);
@@ -115,7 +115,7 @@ class MainScene extends Scene {
 		viewport.indexGui = gui;
 
 		var container = new ui.ViewportContainer();
-		container.styleString = "width: 100%; height: 100%; background-color: #282828;";
+		container.styleString = "width: 100%; height: 100%; background-color: $secondary-background-color;";
 		container.text = keyboard.name;
 		container.display = viewport;
 

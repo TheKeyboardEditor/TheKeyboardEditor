@@ -210,6 +210,7 @@ class Viewport extends Scene {
 		// Stop dragging when pointer is released
 		this.oncePointerUp(this, viewportMouseUp);
 	}
+
 	/*
 	 * update for the duration of the drag
 	 */

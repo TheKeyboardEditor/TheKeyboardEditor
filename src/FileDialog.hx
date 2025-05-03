@@ -1,7 +1,7 @@
 package;
 
 import ceramic.Entity;
-import ceramic.Dialogs;
+//import ceramic.Dialogs;
 
 class FileDialog extends Entity {
 	@event function fileLoaded(body: String);
@@ -22,10 +22,10 @@ class FileDialog extends Entity {
 
 		input.click();
 		#else
-		Dialogs.openFile(title, [{name: title, extensions: ["json"]}], (file) -> {
-			StatusBar.error("Not implemented");
-			// emitFileLoaded(file);
-		});
+		//Dialogs.openFile(title, [{name: title, extensions: ["json"]}], (file) -> {
+		//	StatusBar.error("Not implemented");
+		//	// emitFileLoaded(file);
+		//});
 		#end
 	}
 
@@ -41,10 +41,10 @@ class FileDialog extends Entity {
 		a.click();
 		StatusBar.inform('Downloaded');
 		#elseif sys
-		Dialogs.saveFile(fileName, null, (file: String) -> {
-			sys.io.File.saveContent(file, content);
-			StatusBar.inform('Saved to $file');
-		});
+		//Dialogs.saveFile(fileName, null, (file: String) -> {
+		//	sys.io.File.saveContent(file, content);
+		//	StatusBar.inform('Saved to $file');
+		//});
 		#else
 		throw "Not Implemented";
 		#end

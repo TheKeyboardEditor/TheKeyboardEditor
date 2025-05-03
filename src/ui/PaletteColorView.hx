@@ -5,7 +5,7 @@ import haxe.ui.containers.ScrollView;
 
 // TODO can we make this section be parsed depending on the palette.swatches.length?
 @:xml('
-<scrollview width="100%" height="100%" contentWidth="100%" autoHideScrolls="true">
+<scrollview width="100%" height="100%" contentWidth="100%" autoHideScrolls="true" style="border: none; background-color: $solid-background-color;">
 	<vbox width="100%" horizontalAlign="center" verticalAlign="center">
 		<button-bar id="colors" layout="grid" layoutColumns="4" horizontalAlign="center" verticalAlign="center" />
 	</vbox>

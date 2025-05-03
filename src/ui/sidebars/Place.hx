@@ -12,7 +12,7 @@ import haxe.ui.events.UIEvent;
 	</box>
 	<scrollview styleName="sidebar-main" contentWidth="100%" autoHideScrolls="true">
 		<vbox width="100%" horizontalAlign="center" verticalAlign="center">
-			<button-bar id="keys" layout="grid" layoutColumns="2" horizontalAlign="center" verticalAlign="center"></button-bar>
+			<button-bar id="keys" selectedIndex="0" layout="grid" layoutColumns="2" horizontalAlign="center" verticalAlign="center"></button-bar>
 		</vbox>
 	</scrollview>
 </vbox>

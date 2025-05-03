@@ -5,7 +5,7 @@ import haxe.ui.events.UIEvent;
 
 @:xml('
 <vbox width="100%" height="100%" style="spacing: 0">
-	<hbox width="100%" height="100%" style="spacing: 0">
+	<hbox width="100%" height="100%" style="spacing: 0; padding: 0; margin: 0;">
 		<stack width="224px" height="100%" id="sidebars-stack" selectedIndex="0" />
 		<tabview id="tabs" closable="true" />
 	</hbox>

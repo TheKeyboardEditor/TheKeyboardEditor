@@ -1,0 +1,39 @@
+/* Mode Selector */
+.modeSelector {
+	width: 64px;
+	height: 100%;
+	padding: 0;
+	spacing: 2px;
+	background-color: $solid-background-color;
+	border-radius: 0;
+}
+.modeSelector .first {
+	border-top-left-radius: 0;
+}
+
+.modeSelector .button {
+	width: 64px;
+	height: 64px;
+	border: none;
+	border-radius: 0;
+	background-color: $button-background-color;
+}
+.modeSelector .button:hover {
+	background-color: $button-hover-background-color;
+}
+.modeSelector .button:down {
+	border-radius: 0;
+	border-left: 3px solid $accent-color;
+}
+
+/* Picker */
+#picker {
+	background-color: $tertiary-background-color;
+	border: none;
+}
+#picker:hover {
+	background-color: $hover-background-color;
+}
+.left-dropdown {
+	height: 32px;
+}

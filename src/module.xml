@@ -8,19 +8,26 @@
 	</components>
 	<themes>
 		<keyboard-editor-theme parent="dark">
-			<style resource="themes/styles.css" />
-			<var name="solid-background-color" value="#1d2021" />
-			<var name="hover-background-color" value="#121415" />
-			<var name="normal-text-color" value="#fcfcfc" />
-			<var name="hover-text-color" value="#fcfcfc" />
-			<var name="down-text-color" value="#fcfcfc" />
-			<var name="selection-text-color" value="#fcfcfc" />
+			<style resource="themes/css/global.css" />
+			<style resource="themes/css/sidebars.css" />
+			<style resource="themes/css/mode-selector.css" />
+			<style resource="themes/css/status.css" />
+			<style resource="themes/css/tabs.css" />
+
+			<var name="solid-background-color" value="#040713" />
+			<var name="secondary-background-color" value="#131322" />
+			<var name="tertiary-background-color" value="#08090c" />
+			<var name="button-background-color" value="#1e1e36" />
+			<var name="button-hover-background-color" value="#323256" />
+
+			<var name="normal-text-color" value="#ffffff" />
+			<var name="hover-text-color" value="#ffffff" />
+			<var name="down-text-color" value="#ffffff" />
+			<var name="selection-text-color" value="#ffffff" />
 			<!-- accent -->
 			<var name="accent-color" value="#3c4bc5" />
-			<var name="accent-color-darker" value="#323e52" />
+			<var name="accent-color-darker" value="#2d346a" />
 			<var name="accent-color-lighter" value="#407dbf" />
-			<var name="accent-gradient-start" value="#334666" />
-			<var name="accent-gradient-end" value="#2f3746" />
 		</keyboard-editor-theme>
 	</themes>
 </module>

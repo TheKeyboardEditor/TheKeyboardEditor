@@ -1,0 +1,25 @@
+/* Tabs */
+#tabs {
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+	background-color: $solid-background-color;
+}
+#tabs .tabbar {
+	border: 0;
+	padding: 0;
+}
+#tabs .tabbar-button {
+	margin: 0px;
+	border-radius: 0;
+	background-color: $tertiary-background-color;
+}
+#tabs .tabbar-button-selected {
+	background-color: $secondary-background-color;
+	border-top: 3px solid $accent-color;
+}
+#tabs .tabview-content {
+	background-color: $secondary-background-color;
+	border: 0;
+}

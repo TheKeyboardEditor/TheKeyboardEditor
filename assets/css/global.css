@@ -1,0 +1,12 @@
+/* Global Objects */
+.button {
+	border: 0;
+	border-radius: 8px;
+	background-color: $button-background-color; 
+}
+.button:hover {
+	background-color: $button-hover-background-color;
+}
+.button:down {
+	background-color: $accent-color;
+}
