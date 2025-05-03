@@ -1,0 +1,15 @@
+/* Status Bar */
+.status-container {
+	background-color: $accent-color;
+}
+#action, #pos {
+	color: white;
+	background-color: $accent-color;
+	padding-top: 6px;
+	padding-bottom: 6px;
+	padding-left: 12px;
+	padding-right: 12px;
+}
+#pos {
+	text-align: right;
+}

@@ -1,0 +1,40 @@
+/* Sidebars */
+.left-box {
+	spacing: 0;
+}
+.sidebar-body {
+	width: 160px;
+	height: 100%;
+	border: none;
+	spacing: 0;
+}
+.sidebar-main {
+	width: 100%;
+	height: 100%;
+	border: none;
+	padding: 4px;
+	background-color: $solid-background-color;
+}
+.sidebar-title {
+	margin: 0;
+	width: 100%;
+	height: 32px;
+	background-color: $accent-color-darker; 
+	border: none;
+	border-bottom: 2px solid $accent-color;
+}
+.sidebar-title label {
+	text-align: center;
+	horizontal-align: center;
+	vertical-align: center;
+}
+
+/* Place Sidebar */
+#place-sidebar #keys {
+	spacing: 4px;
+}
+
+/* Color Sidebar */
+#color-sidebar .button {
+	border-radius: 0;
+}

@@ -19,6 +19,21 @@
             "name": "blur.vert"
         },
         {
+            "name": "css/global.css"
+        },
+        {
+            "name": "css/mode-selector.css"
+        },
+        {
+            "name": "css/sidebars.css"
+        },
+        {
+            "name": "css/status.css"
+        },
+        {
+            "name": "css/tabs.css"
+        },
+        {
             "name": "fonts/Roboto-Regular.fnt"
         },
         {
@@ -62,6 +77,9 @@
         },
         {
             "name": "icons/legend-mode.png"
+        },
+        {
+            "name": "icons/logo-dropdown.png"
         },
         {
             "name": "icons/paste.png"
@@ -119,9 +137,6 @@
         },
         {
             "name": "RobotoMedium.png"
-        },
-        {
-            "name": "styles.css"
         },
         {
             "name": "svg/EditIcons.svg"
