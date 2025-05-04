@@ -30,6 +30,8 @@ class MainScene extends Scene {
 		assets.add(Images.ICONS__CUT);
 		assets.add(Images.ICONS__PASTE);
 		assets.add(Images.HEADER);
+		assets.add(Images.ICONS__MOVE_HORIZONTAL);
+		assets.add(Images.ICONS__MOVE_VERTICAL);
 		// JSON
 		assets.add(Texts.NUMPAD);
 		assets.add(Texts.ALLPAD);

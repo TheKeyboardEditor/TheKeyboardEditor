@@ -174,9 +174,9 @@ class Viewport extends Scene {
 				final keycap = KeyMaker.createKey(keyboardUnit, key, unit, gapX, gapY, Std.parseInt(keyboardUnit.defaults.keyColor));
 				keycap.pos(unit * key.position[Axis.X], unit * key.position[Axis.Y]);
 				keycap.component('logic', new viewport.components.KeyLogic(this));
-				for (legend in keycap.legends) {
-					legend.component('logic', new viewport.components.LegendLogic(this, keycap));
-				}
+				//for (legend in keycap.legends) {
+				//	legend.component('logic', new viewport.components.LegendLogic(this, keycap));
+				//}
 				workingSet.add(keycap);
 			}
 		}
