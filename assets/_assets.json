@@ -82,6 +82,12 @@
             "name": "icons/logo-dropdown.png"
         },
         {
+            "name": "icons/move-horizontal.png"
+        },
+        {
+            "name": "icons/move-vertical.png"
+        },
+        {
             "name": "icons/paste.png"
         },
         {

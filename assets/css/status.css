@@ -1,8 +1,8 @@
 /* Status Bar */
-.status-container {
+.status {
 	background-color: $accent-color;
 }
-#action, #pos {
+#action {
 	color: white;
 	background-color: $accent-color;
 	padding-top: 6px;
