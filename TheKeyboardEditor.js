@@ -100669,6 +100669,27 @@ haxe_ui_backend_ComponentImpl.prototype = $extend(haxe_ui_backend_ComponentBase.
 			}
 		}
 	}
+	,handleDisabled: function(disable) {
+		haxe_ui_backend_ComponentBase.prototype.handleDisabled.call(this,disable);
+		if(this.get_disabled()) {
+			this.visual.onPointerOver(this.visual,$bind(this,this.onDisabledOver));
+			this.visual.onPointerOut(this.visual,$bind(this,this.onDisabledOut));
+		} else {
+			this.visual.offPointerOver($bind(this,this.onDisabledOver));
+			this.visual.offPointerOut($bind(this,this.onDisabledOut));
+		}
+		if(haxe_ui_backend_ceramic_Cursor.current != "default" && disable) {
+			haxe_ui_backend_ceramic_Cursor.lock = false;
+		}
+	}
+	,onDisabledOut: function(info) {
+		this.over = false;
+		haxe_ui_backend_ceramic_Cursor.setTo("default");
+	}
+	,onDisabledOver: function(info) {
+		this.over = true;
+		haxe_ui_backend_ceramic_Cursor.setTo("not-allowed");
+	}
 	,mapEvent: function(type,listener) {
 		var _gthis = this;
 		var screen = ceramic_App.app.screen;
@@ -100843,10 +100864,6 @@ haxe_ui_backend_ComponentImpl.prototype = $extend(haxe_ui_backend_ComponentBase.
 				var key = haxe_ui_events_MouseEvent.MOUSE_OUT;
 				if(Object.prototype.hasOwnProperty.call(_this.h,key)) {
 					delete(_this.h[key]);
-				}
-				if(haxe_ui_backend_ceramic_Cursor.current != "default" && this.get_disabled()) {
-					haxe_ui_backend_ceramic_Cursor.lock = false;
-					haxe_ui_backend_ceramic_Cursor.setTo("default");
 				}
 			}
 			break;
@@ -108595,7 +108612,6 @@ haxe_ui_backend_ceramic_Base.prototype = $extend(ceramic_Visual.prototype,{
 			visual = null;
 		}
 		if(visual != null) {
-			visual.set_depth(0);
 			var width = this.get_width();
 			var height = this.get_height();
 			visual.set_width(width);
@@ -108646,7 +108662,6 @@ haxe_ui_backend_ceramic_Base.prototype = $extend(ceramic_Visual.prototype,{
 			visual = null;
 		}
 		if(visual != null) {
-			visual.set_depth(1);
 			var width = this.get_width();
 			var height = this.get_height();
 			visual.set_width(width);
@@ -108796,6 +108811,8 @@ haxe_ui_backend_ceramic_CursorType.fromString = function(cursor) {
 		return "default";
 	case "move":
 		return "move";
+	case "not-allowed":
+		return "not-allowed";
 	case "pointer":
 		return "pointer";
 	case "row-resize":
@@ -108814,6 +108831,8 @@ haxe_ui_backend_ceramic_CursorType.toSdl = function(this1) {
 		return 0;
 	case "move":
 		return 9;
+	case "not-allowed":
+		return 10;
 	case "pointer":
 		return 11;
 	case "row-resize":
@@ -177980,6 +177999,7 @@ haxe_ui_backend_ceramic_CursorType.ROW_RESIZE = "row-resize";
 haxe_ui_backend_ceramic_CursorType.POINTER = "pointer";
 haxe_ui_backend_ceramic_CursorType.MOVE = "move";
 haxe_ui_backend_ceramic_CursorType.TEXT = "text";
+haxe_ui_backend_ceramic_CursorType.DISABLED = "not-allowed";
 haxe_ui_backend_ceramic_MouseHelper.clickTimeMs = 40;
 haxe_ui_backend_ceramic_MouseHelper.clickMaxLatency = 220;
 haxe_ui_backend_ceramic_MouseHelper.clickTime = 0;
